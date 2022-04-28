@@ -9,63 +9,84 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
-        </div>
-    </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
             <h2>
-                Welcome to Alchemy Bootstrap!
+                Home is where your cat is
             </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
+            <div class="right">
+                <div class="picker">
+                    <label>
+                        House exterior
+                        <select id="exterior-dropdown">
+                            <option value="brownstone">Brownstone</option>
+                            <option value="cottage">Cottage</option>
+                            <option value="craftsman">Craftsman</option>
+                            <option value="hobbit-hole">Hobbit Hole</option>
+                            <option value="mid-century">Mid-century modern</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="victorian">Victorian</option>
+                        </select>
+                    </label>
+                    <label>
+                        Interior
+                        <select id="interior-dropdown">
+                            <option value="boho">Boho</option>
+                            <option value="cozy">Cozy</option>
+                            <option value="eclectic">Eclectic</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="modern">Mid-century modern</option>
+                            <option value="traditional">Traditional</option>
+                        </select>
+                    </label>
+                    <label>
+                        Neighborhood
+                        <select id="neighborhood-dropdown">
+                            <option value="city">Cityscape</option>
+                            <option value="desert">Desert</option>
+                            <option value="farm">Farmland</option>
+                            <option value="forest">Forest</option>
+                            <option value="suburb">Suburbia</option>
+                            <option value="shire">The Shire</option>
+                        </select>
+                    </label>
+                    <label>
+                        Cat
+                        <select id="cat-dropdown">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </label>
+                    <label>
+                        Slogan
+                        <input id="slogan-input" />
+                        <button id="slogan-button">Add</button>
+                    </label>
+                </div>
+                <div class="slogans">
 
+                </div>
+                <div class="left">
+                    <div class="home">
+                        <div class="img" id="exterior">
+                        </div>
+                        <div class="img" id="interior">
+                        </div>
+                        <div class="img" id="neighborhood">
+                        </div>
+                        <div class="img" id="cat"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer>
 
     <script type="module" src="./app.js"></script>
 </body>
