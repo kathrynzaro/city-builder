@@ -1,8 +1,6 @@
 /* add home page styles here */
-
 body {
-    /* background-color: rgb(217, 168, 103); */
-    background-image: url(../assets/leaves.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../assets/leaves.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -11,41 +9,29 @@ body {
 
 main {
     font-family: 'Tenor Sans', sans-serif;
-    /* padding: 50px; */
     justify-content: center;
     background-color: white;
     margin: 0 auto;
-    border-radius: 20px;
     width: 80%;
     min-width: 530px;
     max-width: 850px;
     display: flex;
-    /* align-items: center; */
     height: 80%;
     min-height: 1000px;
-    
+    color: #0a3430;
 }
 
 h2 {
+    margin-top: 0px;
     margin-bottom: 30px;
     color: white;
-    background-color: #11524c;
-    padding: 15px;
+    background-color: #0a3430;
+    padding: 50px;
     width: 100%;
     text-align: center;
     letter-spacing: 4px;
-    
 }
 
-.picker {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    /* text-align: center; */
-    line-height: 30px;
-    width: 75%;
-    
-}
 
 .left, .right {
     width: 100%;
@@ -54,6 +40,8 @@ h2 {
     flex-direction: row;
     align-items: center;
 }
+
+/* image div styles here */
 
 #exterior {
     background-image: url(../assets/brownstone.png);
@@ -85,17 +73,19 @@ h2 {
     background-repeat: no-repeat;
     background-position: right;
     height: 175px;
-    /* width: 100%; */
     float: right;
     width: 100%;
     border-radius: 10px;
 }
 
-#slogans {
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+/* picker styles here */
+
+.picker {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    line-height: 30px;
+    width: 75%;
 }
 
 label {
@@ -117,13 +107,14 @@ select {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #6bb998;
+    background-color: #11524c;
     color: white;
     margin-top: 7px;
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     cursor: pointer;
-   
+    letter-spacing: 2px;
+    width: 85%;
 }
 
 
@@ -135,20 +126,16 @@ select {
     width: 100%;
 }
 
+
+/* slogan input styles */
+
 #slog {
     display: flex;
     flex-direction: row;
 }
 
-#report {
-    margin: 20px;
-    font-size: .7rem;
-    line-height: normal;
-    text-align: end;
-}
-
 #slogan-input {
-    background-color: #46a97a;
+    background-color: #11524c;
     border: .5px solid #0a3430;
     border-radius: 5px;
     padding: 7px;
@@ -169,18 +156,37 @@ select {
     color: white;
 }
 
+#slog-label {
+    width: 100%;
+}
+
 #slogan-button:hover {
     cursor: pointer;
     opacity: .7;
 }
 
-#slog-label {
-    width: 100%;
-}
+/* bottom panel styles */
 
 #stats {
-    margin-top: 20px;
-    background-color: #6bb998;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #0a3430;
+    height: 200px;
     width: 100%;
     color: white;
+}
+
+#slogans {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#report {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-size: .7rem;
+    line-height: normal;
+    text-align: center;
 }
