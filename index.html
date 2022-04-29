@@ -9,85 +9,94 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Josefin+Sans&family=Poiret+One&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Home</title>
 </head>
 
 <body>
     <main>
-        <section class="main-section">
+        
             <h2>
-                Home is where your cat is
+                HOME IS WHERE YOUR CAT IS
             </h2>
 
             <div class="right">
                 <div class="picker">
                     <label>
-                        House exterior
+                        EXTERIOR
                         <select id="exterior-dropdown">
-                            <option value="brownstone">Brownstone</option>
-                            <option value="cottage">Cottage</option>
-                            <option value="craftsman">Craftsman</option>
-                            <option value="hobbit-hole">Hobbit Hole</option>
-                            <option value="mid-century">Mid-century modern</option>
-                            <option value="spanish">Spanish</option>
-                            <option value="victorian">Victorian</option>
+                            <option value="brownstone">brownstone</option>
+                            <option value="cottage">cottage</option>
+                            <option value="craftsman">craftsman</option>
+                            <option value="hobbit-hole">hobbit hole</option>
+                            <option value="mid-century">mid-century modern</option>
+                            <option value="spanish">spanish</option>
+                            <option value="victorian">victorian</option>
                         </select>
                     </label>
                     <label>
-                        Interior
+                        INTERIOR
                         <select id="interior-dropdown">
-                            <option value="boho">Boho</option>
-                            <option value="cozy">Cozy</option>
-                            <option value="eclectic">Eclectic</option>
-                            <option value="industrial">Industrial</option>
-                            <option value="modern">Mid-century modern</option>
-                            <option value="hobbit">Hobbit Hole</option>
+                            <option value="boho">boho</option>
+                            <option value="cozy">cozy</option>
+                            <option value="eclectic">eclectic</option>
+                            <option value="industrial">industrial</option>
+                            <option value="modern">mid-century modern</option>
+                            <option value="hobbit">hobbit hole</option>
                         </select>
                     </label>
                     <label>
-                        Neighborhood
+                        LANDSCAPE
                         <select id="neighborhood-dropdown">
-                            <option value="city">City</option>
-                            <option value="desert">Desert</option>
-                            <option value="farm">Farmland</option>
-                            <option value="forest">Forest</option>
-                            <option value="suburb">Suburbia</option>
-                            <option value="shire">The Shire</option>
+                            <option value="city">city</option>
+                            <option value="desert">desert</option>
+                            <option value="farm">farmland</option>
+                            <option value="forest">forest</option>
+                            <option value="suburb">suburbia</option>
+                            <option value="shire">the shire</option>
                         </select>
                     </label>
                     <label>
-                        Cat
+                        CAT
                         <select id="cat-dropdown">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                            <option value="renly1">renly</option>
+                            <option value="renly2">renly</option>
+                            <option value="renly3">renly</option>
+                            <option value="renly4">renly</option>
+                            <option value="renly5">renly</option>
                         </select>
                     </label>
-                    <label>
-                        Slogan
-                        <input id="slogan-input" />
-                        <button id="slogan-button">Add</button>
-                    </label>
-                </div>
-                <div class="slogans">
-
+                    <div class="slog">
+                        <label>
+                            SLOGAN
+                            <input id="slogan-input" />
+                            <button id="slogan-button">ADD</button>
+                        </label>
+                    </div>
                 </div>
                 <div class="left">
                     <div class="home">
-                        <div class="img" id="exterior">
+                        <div class="bg" id="exterior">
                         </div>
-                        <div class="img" id="interior">
+                        <div class="bg" id="interior">
                         </div>
-                        <div class="img" id="neighborhood">
+                        <div class="bg" id="neighborhood">
                         </div>
-                        <div class="img" id="cat"></div>
+                        <div class="bg" id="cat">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
+            
+            <div id="stats">
+                <p id="report"></p>
+                    <div id="slogans">
+                    </div>
+            </div>
+        </main>
+        
     <script type="module" src="./app.js"></script>
 </body>
 
