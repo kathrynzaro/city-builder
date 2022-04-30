@@ -9,64 +9,104 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Josefin+Sans&family=Limelight&family=Poiret+One&family=Press+Start+2P&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <title>Home</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
-        </div>
-    </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        
+        <h2>
+            HOME IS WHERE YOUR CAT IS
+        </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
-        </section>
-    </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
-    </footer>
-
+        
+            <div class="right">
+                <div class="picker">
+                    <label>
+                        EXTERIOR
+                        <select id="exterior-dropdown">
+                                <option value="brownstone">brownstone</option>
+                                <option value="cottage">cottage</option>
+                                <option value="craftsman">craftsman</option>
+                                <option value="hobbit-hole">hobbit hole</option>
+                                <option value="mid-century">mid-century modern</option>
+                                <option value="spanish">spanish</option>
+                                <option value="victorian">victorian</option>
+                        </select>
+                    </label>
+                    <label>
+                        INTERIOR
+                        <select id="interior-dropdown">
+                            <option value="boho">boho</option>
+                            <option value="cozy">cozy</option>
+                            <option value="eclectic">eclectic</option>
+                            <option value="industrial">industrial</option>
+                            <option value="modern">mid-century modern</option>
+                            <option value="hobbit">hobbit hole</option>
+                        </select>
+                    </label>
+                    <label>
+                        LANDSCAPE
+                        <select id="neighborhood-dropdown">
+                            <option value="city">city</option>
+                            <option value="desert">desert</option>
+                            <option value="farm">farmland</option>
+                            <option value="forest">forest</option>
+                            <option value="suburb">suburbia</option>
+                            <option value="shire">the shire</option>
+                        </select>
+                    </label>
+                    <label>
+                        CAT
+                        <select id="cat-dropdown">
+                            <option value="renly1">renly</option>
+                            <!-- <option value="renly2">renly</option> -->
+                            <option value="renly3">renly</option>
+                            <option value="renly4">renly</option>
+                            <option value="renly5">renly</option>
+                        </select>
+                    </label>
+                    <label id="name-label">
+                        NAME YOUR DWELLING
+                        <div id="name">
+                            <input id="name-input" />
+                            <button id="name-button">NAME</button>
+                        </div>
+                    </label>
+                    <label id="slog-label">
+                        ADD A SLOGAN
+                        <div id="slog">
+                            <input id="slogan-input" />
+                            <button id="slogan-button">ADD</button>
+                        </div>
+                    </label>
+                </div>
+                <div class="left">
+                    <div class="home">
+                        <div class="bg" id="exterior">
+                        </div>
+                        <div class="bg" id="interior">
+                        </div>
+                        <div class="bg" id="neighborhood">
+                        </div>
+                        <div class="bg" id="cat">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="stats">
+                <div id="names">
+                </div>
+                <div id="slogans">
+                </div>
+                <p id="report"></p>
+            </div>
+        </main>
+        
     <script type="module" src="./app.js"></script>
 </body>
 
