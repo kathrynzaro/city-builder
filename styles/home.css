@@ -83,7 +83,7 @@ h2 {
 .picker {
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 15px;
     line-height: 30px;
     width: 75%;
 }
@@ -140,7 +140,7 @@ select {
     border-radius: 5px;
     padding: 7px;
     color: white;
-    /* width: 150px; */
+    width: 220px;
     /* margin-bottom: 5px; */
     /* display: inline-block; */
 }
@@ -176,6 +176,12 @@ select {
     color: white;
 }
 
+#names {
+    font-size: 1.6rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 #slogans {
     font-size: 1.5rem;
     text-align: center;
@@ -189,4 +195,37 @@ select {
     font-size: .7rem;
     line-height: normal;
     text-align: center;
+}
+
+
+#name {
+    display: flex;
+    flex-direction: row;
+}
+
+#name-input {
+    background-color: #11524c;
+    border: .5px solid #0a3430;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    width: 220px;
+    /* margin-bottom: 5px; */
+    /* display: inline-block; */
+}
+
+#name-button {
+    font-size: 1.1rem;
+    margin-left: 5px;
+    background-color: #11524c;
+    border: .5px solid #0a3430;
+    border-radius: 5px;
+    opacity: 1;
+    font-family: 'Limelight', cursive;
+    color: white;
+    cursor: pointer;
+}
+
+#name-button:hover {
+    opacity: .7;
 }

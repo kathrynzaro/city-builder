@@ -9,9 +9,14 @@ const inElem = document.getElementById('interior');
 const hoodElem = document.getElementById('neighborhood');
 const catElem = document.getElementById('cat');
 const reportEl = document.getElementById('report');
+
 const slogansEl = document.getElementById('slogans');
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
+
+const namesEl = document.getElementById('names');
+const nameInput = document.getElementById('name-input');
+const nameButton = document.getElementById('name-button');
 
 // let state
 let exCount = 0;
@@ -19,6 +24,7 @@ let inCount = 0;
 let hoodCount = 0;
 let catCount = 0;
 
+let names = [];
 let slogans = [];
 
 // set event listeners 
@@ -50,7 +56,15 @@ catDropdown.addEventListener('change', () => {
     displayStats();
 });
 
+nameButton.addEventListener('click', () => {
+    names.push(nameInput.value);
+    console.log(names);
+    nameInput.value = '';
+    displayNames();
+});
+
 sloganButton.addEventListener('click', () => {
+    slogansEl.textContent = '';
     slogans.push(sloganInput.value);
     console.log(slogans);
     sloganInput.value = '';
@@ -58,7 +72,7 @@ sloganButton.addEventListener('click', () => {
 });
 
 function displayStats() {
-    reportEl.textContent = `YOU'VE EXPLORED ${exCount} EXTERIORS, ${inCount} INTERIORS, ${hoodCount} LANDSCAPES, AND ${catCount} RENLYS.`;
+    reportEl.textContent = `YOU'VE EXPLORED ${exCount} EXTERIORS, ${inCount} INTERIORS, ${hoodCount} LANDSCAPES, AND ${catCount} SLEEPY RENLYS.`;
 }
 
 function displaySlogans() {
@@ -70,6 +84,20 @@ function displaySlogans() {
         slogansEl.append(sloganList);
     }
 }
+    
+    // slogansEl.textContent = `${nameInput.value}: ${sloganInput.value}`
+
+function displayNames() {
+    namesEl.textContent = '';
+    for (let name of names) {
+        const nameList = document.createElement('div');
+        console.log(names);
+        nameList.textContent = name;
+        namesEl.append(nameList);
+    }
+}
+
+
 
   // get user input
   // use user input to update state 
